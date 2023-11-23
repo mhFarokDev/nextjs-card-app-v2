@@ -1,21 +1,25 @@
-const { createSlice } = require("@reduxjs/toolkit");
+import {fetchAllUsers} from "./userAPI";
 
-/**
- * Create User slice
- */
+import { createSlice } from "@reduxjs/toolkit";
+
 const userSlice = createSlice({
-    name : user,
+    name : "user",
     initialState : {
         users : []
     },
     reducers : {},
-    extraReducers : {}
+    extraReducers : (builder) =>{
+        builder.addCase(fetchAllUsers.fulfilled, (state, action)=>{
+            state.users = action.payload
+        })
+    }
 })
 
+// selector
+export const userSelector = (state) => state.users;
 
-// selectors
-export const userSelector = (state) => state.user
-// actions
+// action
 export const {} = userSlice.actions
-// reducer
+
+// defaulr reducer
 export default userSlice.reducer

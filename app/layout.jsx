@@ -7,7 +7,10 @@ import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
-
+// export const metadata = {
+//   title : "Card App by nextjs | Study reactjs, nextjs",
+//   description : "This Is home page of card App."
+// }
 export default function RootLayout({ children }) {
   return (
     <html lang="en">

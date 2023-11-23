@@ -1,0 +1,25 @@
+.contact-form {
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: #eee;
+}
+.contact-form input[type="text"] {
+    width: 100%;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+    border: 1px solid #d6d6d6;
+}
+.contact-form input[type="radio"] {
+    width: 30px;
+}
+.contact-form button {
+    width: 100%;
+    margin-top: 16px;
+    padding: 6px;
+    border: navajowhite;
+    background: #a49cff;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}

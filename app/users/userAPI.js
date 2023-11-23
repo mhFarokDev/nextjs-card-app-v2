@@ -1,5 +1,8 @@
+const { getUserData } = require("@/libs/getUserData");
 const { createAsyncThunk } = require("@reduxjs/toolkit");
 
-const fetchAllUser = createAsyncThunk('users/fetchUsers', async()=>{
-
+export const fetchAllUsers = createAsyncThunk("user/fetchuser", async () => {
+    const users = await getUserData()
+    return users
 })
+
