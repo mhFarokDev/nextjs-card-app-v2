@@ -16,7 +16,7 @@ const userSlice = createSlice({
 })
 
 // selector
-export const userSelector = (state) => state.users;
+export const userSelector = (state) => state.user;
 
 // action
 export const {} = userSlice.actions

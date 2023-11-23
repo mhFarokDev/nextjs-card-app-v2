@@ -23,3 +23,51 @@
     font-size: 20px;
     cursor: pointer;
 }
+
+
+/* table */
+.user-table {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+.user-table table {
+    width: 100%;
+    text-align: left;
+    border: 1px solid #685656;
+}
+.user-table table thead tr {
+    background: #d5cfcf;
+}
+.user-table table thead tr th {
+    border: 1px solid #685656;
+    padding: 8px 10px;
+}
+tbody tr {
+    background: #ffffff;
+}
+tbody tr:nth-child(odd) {
+    background: #e8e8e8;
+}
+tbody tr td {
+    border: 1px solid #685656;
+    padding: 2px 9px;
+}
+tbody tr td img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+tbody tr td button {
+    background: #2fe152;
+    border: none;
+    padding: 4px 15px;
+    font-size: 21px;
+    margin-right: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+tbody tr td button.trash {
+    background: #ff5f5f;
+}

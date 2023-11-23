@@ -16,8 +16,7 @@ export default function Home() {
   }, [dispatch])
   
 
-  const users = useSelector(userSelector)
-  console.log(users);
+  const {users} = useSelector(userSelector)
 
   return (
     <main>
@@ -29,19 +28,29 @@ export default function Home() {
         </div>
       </section>
       <div className="all-users container">
+        <h2>Users List</h2>
         <div className="user-list">
-          <div className="user-body">
-            <div className="image">
-              {/* <Image/> */}
+
+        {
+          users.map(data => 
+            <div className="user-body">
+              <div className="image">
+                <Image src={data.photo} width="100" height="100"/>
+              </div>
+              <div className="contain">
+                <p>Name : {data.name}</p>
+                <p>E-mail : {data.email}</p>
+                <p>Phone : {data.call}</p>
+                <p>Gender : {data.gender}</p>
+              </div>
             </div>
-            <div className="contain">
-               <p>Name : </p>
-               <p>E-mail : </p>
-               <p>Phone : </p>
-               <p>Call : </p>
-               <p>Gender : </p>
-            </div>
-          </div>
+          
+          )
+        }
+
+          
+
+
         </div>
       </div>
     </main>

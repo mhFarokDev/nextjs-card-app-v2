@@ -131,3 +131,30 @@ a {
   width: 100%;
   height: auto;
 }
+
+/* users lists */
+.all-users.container h2 {
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  margin: 30px;
+  color: #ff00fe;
+}
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.user-list .user-body {
+  display: flex;
+  padding: 10px;
+  background: linear-gradient(90deg, rgb(0 0 0) 0%, rgb(37 67 65) 35%, rgb(28 126 131) 100%);
+  margin-bottom: 20px;
+  width: 31%;
+  border-radius: 6px;
+  color: #fff;
+  align-items: center;
+}
+.user-list .user-body .image {
+  margin-right: 10px;
+}
